@@ -20,6 +20,7 @@ std = ["alloc", "esp-idf-sys/std", "embedded-svc?/std"]
 alloc = ["embedded-svc?/alloc"]
 
 riscv-ulp-hal = []
+esp32-pico-mini-02 = []
 
 experimental = ["embedded-svc?/experimental"]
 
