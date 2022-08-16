@@ -1048,18 +1048,18 @@ mod chip {
     pin!(Gpio8:8, IO, NORTC:0, NOADC:0, NODAC:0, NOTOUCH:0);
     #[cfg(not(any(feature = "riscv-ulp-hal", feature = "esp32-pico-mini-02")))]
     pin!(Gpio9:9, IO, NORTC:0, NOADC:0, NODAC:0, NOTOUCH:0);
-    #[cfg(not(any(feature = "riscv-ulp-hal", feature = "esp32-pico-mini-02")))]
-    pin!(Gpio10:10, IO, NORTC:0, NOADC:0, NODAC:0, NOTOUCH:0);
+    #[cfg(not(any(feature = "riscv-ulp-hal")))]
+    pin!(Gpio10:10, IO, NORTC:0, NOADC:0, NODAC:0, NOTOUCH:0); // missing from pico-mini-02, but esp-idf-svc assumes it exists
     #[cfg(not(any(feature = "riscv-ulp-hal", feature = "esp32-pico-mini-02")))]
     pin!(Gpio11:11, IO, NORTC:0, NOADC:0, NODAC:0, NOTOUCH:0);
     pin!(Gpio12:12, IO, RTC:15, ADC2:5, NODAC:0, TOUCH:5);
     pin!(Gpio13:13, IO, RTC:14, ADC2:4, NODAC:0, TOUCH:4);
     pin!(Gpio14:14, IO, RTC:16, ADC2:6, NODAC:0, TOUCH:6);
     pin!(Gpio15:15, IO, RTC:13, ADC2:3, NODAC:0, TOUCH:3);
-    #[cfg(not(any(feature = "riscv-ulp-hal", feature = "esp32-pico-mini-02")))]
-    pin!(Gpio16:16, IO, NORTC:0, NOADC:0, NODAC:0, NOTOUCH:0);
-    #[cfg(not(any(feature = "riscv-ulp-hal", feature = "esp32-pico-mini-02")))]
-    pin!(Gpio17:17, IO, NORTC:0, NOADC:0, NODAC:0, NOTOUCH:0);
+    #[cfg(not(any(feature = "riscv-ulp-hal")))]
+    pin!(Gpio16:16, IO, NORTC:0, NOADC:0, NODAC:0, NOTOUCH:0); // missing from pico-mini-02, but esp-idf-svc assumes it exists
+    #[cfg(not(any(feature = "riscv-ulp-hal")))]
+    pin!(Gpio17:17, IO, NORTC:0, NOADC:0, NODAC:0, NOTOUCH:0); // missing from pico-mini-02, but esp-idf-svc assumes it exists
     #[cfg(not(any(feature = "riscv-ulp-hal", feature = "esp32-pico-mini-02")))]
     pin!(Gpio18:18, IO, NORTC:0, NOADC:0, NODAC:0, NOTOUCH:0);
     #[cfg(not(feature = "riscv-ulp-hal"))]
